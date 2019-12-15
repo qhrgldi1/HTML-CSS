@@ -3,35 +3,31 @@ h1, h2, ul, p{
     padding: 0;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-body{
-    background-color: #666;
-    /* 창 크기 맞춤 */ 
-    background-size: cover;
-    /* 창 가운데 정렬*/
+body {
     background-position: center;
-    /* 스크롤 영향 받지 않게 */
+    background-size: cover;
     background-attachment: fixed;
     background-image: url(images/halloween-background.gif);
 }
 
-.wrapper{
+.wrapper {
     background-color: #ddd;
     width: 800px;
     margin: 50px auto;
 }
 
-.header{
+.header {
     background-image: url(images/halloween-header-bg.png);
     color: white;
     height: 400px;
     text-align: center;
 }
 
-.header .profile{
+.header profile {
     margin-top: 50px;
 }
 
@@ -40,7 +36,7 @@ body{
     margin: 10px 0;
 }
 
-.header p{
+.header p {
     background-color: black;
     color: #888;
     width: 400px;
@@ -49,40 +45,37 @@ body{
     border-radius: 5px;
 }
 
-.section{
+.section {
     background-image: url(images/icon-information.png);
     background-repeat: no-repeat;
     background-position: right 30px center;
+    padding: 20px;
     background-color: white;
     margin: 20px;
-    padding: 20px;
 }
 
-.section h2{
-    color: orangered;
-    margin-bottom: 10px;
+#SKILL {
+    background-image: url(images/icon-skills.png);
+    background-repeat: no-repeat;
+    background-position: right 30px center;
 }
 
-.section li{
+.section li {
     background-image: url(images/icon.png);
     background-repeat: no-repeat;
     padding: 10px 50px 8px;
 }
 
-.section li:hover{
-    background-image: url(images/icon-transform.png);
-    background-repeat: no-repeat;
+.section h2 {
     color: orangered;
-    border-color: orangered;
+    margin-bottom: 10px;
 }
 
-.footer{
-    background-color: #111;
-    color:#999;
-    padding: 10px 0;
-    text-align: center;
-    color: violet;
-    /* 자간, 들여쓰기 */
-    letter-spacing: 5px;
+.footer {
+    background-color: black;
     text-indent: 5px;
+    letter-spacing: 5px;
+    color: violet;
+    text-align: center;
+    padding: 10px 0;
 }
