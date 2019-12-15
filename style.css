@@ -1,0 +1,81 @@
+h1, h2, ul, p{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(images/halloween-background.gif);
+}
+
+.wrapper {
+    background-color: #ddd;
+    width: 800px;
+    margin: 50px auto;
+}
+
+.header {
+    background-image: url(images/halloween-header-bg.png);
+    color: white;
+    height: 400px;
+    text-align: center;
+}
+
+.header profile {
+    margin-top: 50px;
+}
+
+.header h1{
+    color: violet;
+    margin: 10px 0;
+}
+
+.header p {
+    background-color: black;
+    color: #888;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.section {
+    background-image: url(images/icon-information.png);
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+
+#SKILL {
+    background-image: url(images/icon-skills.png);
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+}
+
+.section li {
+    background-image: url(images/icon.png);
+    background-repeat: no-repeat;
+    padding: 10px 50px 8px;
+}
+
+.section h2 {
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: black;
+    text-indent: 5px;
+    letter-spacing: 5px;
+    color: violet;
+    text-align: center;
+    padding: 10px 0;
+}
