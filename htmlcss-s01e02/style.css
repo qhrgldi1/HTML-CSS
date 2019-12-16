@@ -54,10 +54,8 @@ body {
     margin: 20px;
 }
 
-#SKILL {
+.skills {
     background-image: url(images/icon-skills.png);
-    background-repeat: no-repeat;
-    background-position: right 30px center;
 }
 
 .section li {
