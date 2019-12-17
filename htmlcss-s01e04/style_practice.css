@@ -1,0 +1,163 @@
+h1, ul, body, p{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+body {
+    background-image: url(images/bg.png);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto 100px;
+    background-image: url(images/rope.png);
+    background-position: center;
+}
+
+.header{
+    text-align: center;
+}
+
+.logo {
+    background-image: url(images/logo.png);
+    display: inline-block;
+    width: 450px;
+    height: 140px;
+    margin: 20px 0;
+    text-indent: -9999px;
+}
+
+.menu {
+    text-align: center;
+    margin: 30px auto;
+}
+
+li a {
+    display: block;
+    width: 200px;
+    margin: 0 auto 15px;
+    border: 2px solid #eee;
+    color: white;
+    padding: 8px 0;
+}
+
+li a:hover {
+    color: orangered;
+    border: 2px solid;
+}
+
+.section {
+    background-image: url(images/wood.png);
+    margin: 50px 0;
+    padding: 30px;
+    border: 10px solid yellow;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5),
+                inset 0 0 30px 10px yellowgreen;
+    border-radius: 10px;
+}
+
+.section h1 {
+    color: yellowgreen;
+    font-size: 100px;
+    line-height: 171px;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.section p{
+    color: antiquewhite;
+    margin-top: 20px;
+}
+
+.animal01 {
+    background-image: url(images/animal01.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.animal02 {
+    background-image: url(images/animal02.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.animal03 {
+    background-image: url(images/animal03.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.animal04 {
+    background-image: url(images/animal04.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.animal05 {
+    background-image: url(images/animal05.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.animal06 {
+    background-image: url(images/animal06.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.animal07 {
+    background-image: url(images/animal07.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.section:nth-child(even) h1{
+    background-position: left center;
+    text-align: right;
+}
+
+.str{
+    background-color: violet;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: black;
+}
+
+.footer {
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5),
+    inset 0 0 30px 10px orangered;
+    border: orange solid 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+    overflow:hidden;
+    font-family: 'Monoton', cursive;
+}
+
+.footer::before {
+    content: ' ';
+    background-image: url(images/ground.png);
+    background-repeat: repeat-x;
+    display: block;
+    height: 50px;
+}
