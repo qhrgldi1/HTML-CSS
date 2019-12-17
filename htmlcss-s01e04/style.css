@@ -1,0 +1,159 @@
+/* CSS Reset */
+body, ul, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    /* 부모의 색상을 상속받음 */
+    color: inherit;
+}
+
+body {
+    background-image: url(images/bg.png);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wrapper {
+    background-position: center;
+    background-image: url(images/rope.png);
+    width: 800px;
+    margin: 0 auto 100px;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    background-image: url(images/logo.png);
+    width: 450px;
+    height: 140px;
+    display: inline-block;
+    margin: 20px 0;
+    /* Image Replacement 기법, IR 기법 */
+    text-indent: -9999px;
+}
+
+.menu {
+    width: 200px;
+    margin: 30px auto;
+    color: #666;
+}
+
+.menu li {
+    /* 부모의 색상 자동 상속 */
+    margin-bottom: 5px;
+}
+
+.menu li a {
+    border: 2px solid;
+    padding: 5px 0;
+    display: block;
+}
+
+.menu li a:hover{
+    color: orange;
+}
+
+.section {
+    background-image: url(images/wood.png);
+    background-color: #7d4107;
+    margin: 50px 0;
+    padding: 30px;
+    border: 10px solid #7f4001;
+    color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6),
+                inset 0 0 10px rgba(0, 0, 0.5);
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.section p strong {
+    background-color: #7f4001;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: yellow;
+}
+
+.section h1 {
+    margin-bottom: 20px;
+    font-size: 80px;
+    line-height: 174px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: 'Kalam', cursive;
+}
+
+.section:nth-child(even) h1 {
+    background-position: left center;
+    text-align: right;
+}
+
+.section h1.animal01 {
+    color: orange;
+    background-image: url(images/animal01.png);
+}
+
+.section h1.animal02 {
+    color: pink;
+    background-image: url(images/animal02.png);
+}
+
+.section h1.animal03 {
+    color: #999;
+    background-image: url(images/animal03.png);
+}
+
+.section h1.animal04 {
+    color: #ddd;
+    background-image: url(images/animal04.png);
+}
+
+.section h1.animal05 {
+    color: orangered;
+    background-image: url(images/animal05.png);
+}
+
+.section h1.animal06 {
+    color: peru;
+    background-image: url(images/animal06.png);
+}
+
+.section h1.animal07 {
+    color: blueviolet;
+    background-image: url(images/animal07.png);
+}
+
+.footer {
+    background-color: #7d4107;
+    color: pink;
+    text-align: center;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6),
+                inset 0 0 10px rgba(0, 0, 0.5);
+}
+
+/* 가상 요소 */
+.footer::before {
+    content: ' ';
+    background-image: url(images/ground.png);
+    background-repeat: repeat-x;
+    display: block;
+    height: 50px;
+}
+
+.footer p {
+    padding: 20px 0;
+}
