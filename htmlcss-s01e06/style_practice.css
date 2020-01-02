@@ -1,0 +1,161 @@
+body, h1, p {
+    margin: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 150px auto;
+}
+
+.price::before{
+    content:'$';
+    font-size: 0.7em;
+    opacity: 0.5;
+    vertical-align: middle;
+}
+
+.price {
+    font-size: 35px;
+}
+.star::before,
+.star {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-image:url(images/star-sprite.png);
+    overflow: hidden;
+}
+
+.star::before {
+    content: ' ';
+    display: block;
+    background-position: left bottom;
+    width: 60%;
+}
+
+.sidebar,
+.contents {
+    border-radius: 5px;
+}
+
+.sidebar {
+    background-color: skyblue;
+    float: right;
+    width: 250px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.sidebar-section {
+    margin: 20px 0;
+}
+
+.cover {
+    width: 100%;
+    margin: -100px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color : violet;
+    line-height: 1;
+}
+
+.button {
+    color: white;
+    margin-bottom : 5px;
+    width: 200px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #444;
+    text-indent: 0.2em;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+
+.button.share {
+    margin-bottom: 20px;
+    background-color: goldenrod;
+}
+
+.contents {
+    padding: 20px;
+    overflow: hidden;
+    background-color: skyblue;
+}
+
+.section {
+    margin: 20px;
+}
+
+h2 {
+    color: violet;
+    border-bottom: 2px solid violet;
+    opacity: 0.7;
+}
+
+.profile {
+    float: left;
+}
+
+.person .profile img {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.person .profile::before,
+.person .profile::after {
+    content:' ';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.person .profile::before{
+    border-color: transparent transparent transparent tomato;
+    display: none;
+}
+
+.person .profile::after{
+    border-color: transparent tomato transparent transparent;
+}
+
+.person.answer .profile::before{
+    content:' ';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent tomato;
+}
+
+.person.answer .profile::after{
+    display: none;
+}
+
+.speak {
+    padding: 20px;
+    overflow: hidden;
+    background-color: tomato;
+}
+
+.person {
+    margin-bottom: 15px;
+}
+
+.person.answer .profile {
+    float: right;
+}

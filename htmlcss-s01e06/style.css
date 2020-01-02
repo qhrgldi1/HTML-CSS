@@ -1,0 +1,183 @@
+body, h1, h2, p {
+    margin: 0;
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+body {
+    background-color: #999;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 150px auto;
+}
+
+.sidebar,
+.contents {
+    border-radius: 3px;
+    background-color: white;
+}
+
+.sidebar {
+    margin-left: 20px;
+    float: right;
+    width: 250px;
+    text-align: center;
+}
+
+.sidebar-section {
+    margin: 20px 0;
+}
+
+.contents {
+    padding: 30px;
+    overflow: hidden;
+}
+
+.cover {
+    width: 100%;
+    margin-top: -100px;
+}
+
+.title {
+    color: #bbc8d2;
+    line-height: 1;
+}
+
+.price {
+    color: #bbc8d2;
+    font-size: 30px;
+}
+
+.price::before {
+    content:'$';
+    font-size: 0.7em;
+    margin-right: 0.2em;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.button {
+    background-color: #bbc8d2;
+    color: white;
+    display: block;
+    margin: 5px 20px;
+    padding: 12px 0 10px 0;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+}
+
+.button.share {
+    background-color: #555;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section h2 {
+    color: #bbc8d2;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.message {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.message.answer .message-profile {
+    float: right;
+}
+
+.message.answer .message-profile::after {
+    display:none;
+}
+
+.message.answer .message-profile::before {
+    display: inline-block;
+}
+
+.message-profile {
+    float: left;
+}
+
+.message-profile::before,
+.message-profile::after,
+.message-profile img {
+    vertical-align: middle;
+}
+
+.message-profile img {
+    border-radius: 50%;
+}
+
+.message-profile::before,
+.message-profile::after {
+    content: ' ';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.message-profile::before {
+    border-color: transparent transparent transparent #ddd;
+    display: none;
+}
+
+.message-profile::after {
+    border-color: transparent #ddd transparent transparent;
+}
+
+.message-contents {
+    background-color: #ddd;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.star::before,
+.star {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-image: url(images/star-sprite.png);
+    overflow: hidden;
+}
+
+.star::before {
+    content: ' ';
+    display: block;
+    background-position: left bottom;
+}
+
+.star.s01::before {
+    width: 20%;
+}
+
+.star.s02::before {
+    width: 40%;
+}
+
+.star.s03::before {
+    width: 60%;
+}
+
+.star.s04::before {
+    width: 80%;
+}
+
+.star.s05::before {
+    width: 100%;
+}
