@@ -1,0 +1,98 @@
+body, h1, h2, p{
+    margin: 0;
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+body {
+    background-color: #ddd;
+    
+}
+
+
+.main-cover {
+    background-image: url(images/background.png);
+    height: 50vh;
+    font-size: 6vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    color: white;
+    background-color: orangered;
+}
+
+h2 {
+    font-size: 40px;
+    display: inline-block;
+    margin-left: auto;
+    margin-bottom: 30px;
+    border-bottom: 5px solid;
+}
+
+.section.strawberry h2{
+    color: orangered;
+}
+
+.section.orange h2{
+    color: orange;
+}
+
+.section.kiwi h2{
+    color: forestgreen;
+}
+
+.section {
+    background-color: white;
+    margin: 50px auto;
+    padding: 50px;
+    position: relative;
+    text-align: right;
+    width: 900px;
+}
+
+.section p {
+    float: left;
+    font-size: 1.2em;
+    line-height: 1.5;
+    width: 250px;
+    margin-right: 20px;
+    color: #bbb;
+}
+
+.section-contents {
+    display: inline-block;
+}
+
+
+.section p:last-child {
+    margin-right: 0;
+}
+
+.section-cover {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin:0 -160px;
+}
+
+.section:nth-child(even) {
+    text-align: left;
+}
+
+.section:nth-child(even) .section-cover {
+    right: 0;
+    left: auto;
+}
