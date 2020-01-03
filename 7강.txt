@@ -1,0 +1,54 @@
+# 7강 정리
+
+#### position: relative;
+* 상대적인
+* left: 50px; top: 10px;
+* margin과 다른 점은 뒤따라오는 컨텐츠를 무시함
+* 원래의 이미지 위치는 고정되어 있고 시각적인 효과만 위치 변경되어 나타남
+* right, bottom 사용은 권장하지 않음
+
+#### position: absolute;
+* 절대적인
+* 공간을 차지하지 않고 위로 뜸
+* 뒤따라오는 텍스트가 이미지 공간을 무시하게 됨
+* left: 0; right: 0; top: 0; bottom: 0; 일 때, left, top 기준으로 우선순위 정렬됨
+
+#### 자식 : absolute 부모 : realtive면 가장 근접한 부모 기준으로 이미지 relative
+
+#### 이미지 가운데 정렬 (position 사용)
+* width, height 값을 알고있을 때
+            .children {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -50px;
+                margin-top: -50px;
+            }
+
+#### div 태그의 position: absolute; 가운데 정렬
+* width, height 값을 모를 때
+* left: 50%; top: 50%;
+* transform: translate(-50%, -50%);
+* IE에서 사용 할 때는 -ms-transform
+
+#### view height
+* 사용자가 보고있는 웹페이지 전체에 이미지를 깔 때
+* height: 100vh (vh는 view height의 약자)
+* 기존방식
+* html, body {
+	height : 100%
+	}
+* .cover {
+	height: 100%;
+	}
+* font-size: 6vw; --> width
+
+#### 창크기 조절할 때 이미지 크기 변동 없게 설정
+* background-size: cover;
+* background-position: center;
+
+#### left: 0; right: 0; 이 만났을 때
+* 우선순위 left
+* left:auto; 하게 되면 right:0; 적용 가능
