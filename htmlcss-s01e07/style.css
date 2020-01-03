@@ -1,0 +1,112 @@
+/* CSS Reset */
+body, h1, h2, p{
+    margin: 0;
+}
+
+/* 기존 가운데 정렬 방식
+html, body {
+    height: 100%;
+}
+*/
+
+/* Common */
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+body {
+    background-color: #ddd;
+}
+
+
+.cover {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/background.png);
+    color: white;
+    height: 50vh;
+    font-size: 6vw;
+    position: relative;
+}
+
+.cover h1 {
+    background-color: orangered;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.15em 0.4em;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+.wrapper {
+    width: 980px;
+    margin: 50px auto;
+}
+
+.section {
+    background-color: white;
+    margin: 50px 0;
+    padding: 30px;
+    color: #999;
+    line-height: 1.6;
+    text-align: right;
+    position: relative;
+}
+
+.section-contents {
+    display: inline-block;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+}
+
+.section.strawberry h2 {
+    color: red;
+    border-bottom: 5px solid orangered;
+}
+
+.section.orange h2 {
+    color: orange;
+    border-bottom: 5px solid yellowgreen;
+}
+
+.section.kiwi h2 {
+    color: green;
+    border-bottom: 5px solid forestgreen;
+}
+
+.section p {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.section p:last-child {
+    margin-right: 0;
+}
+
+.section-cover {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 -160px;
+}
+
+.section:nth-child(even) {
+    text-align: left;
+}
+
+
+.section:nth-child(even) .section-cover {
+    left: auto;
+    right: 0;
+}
