@@ -1,14 +1,14 @@
-body, h1, p {
+body, h1, h2, p {
     margin: 0;
 }
 
-body {
-    background-color: #222;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+body {
+    background-color: #999;
 }
 
 .wrapper {
@@ -16,22 +16,24 @@ a {
     margin: 150px auto;
 }
 
-.price::before{
-    content:'$';
-    font-size: 0.7em;
-    opacity: 0.5;
-    vertical-align: middle;
+.sidebar,
+.contents {
+    border-radius: 5px;
+    background-color: white;
 }
 
-.price {
-    font-size: 35px;
+.sidebar {
+    margin-left: 20px;
+    float: right;
+    width: 250px;
+    text-align: center;
 }
-.star::before,
+.star::before ,
 .star {
     display: inline-block;
     width: 150px;
     height: 30px;
-    background-image:url(images/star-sprite.png);
+    background-image: url(images/star-sprite.png);
     overflow: hidden;
 }
 
@@ -39,123 +41,124 @@ a {
     content: ' ';
     display: block;
     background-position: left bottom;
-    width: 60%;
+    width: 80%;
 }
 
-.sidebar,
-.contents {
-    border-radius: 5px;
+.sidebar-section,
+.contents-section {
+    margin-bottom: 20px;
 }
 
-.sidebar {
-    background-color: skyblue;
-    float: right;
-    width: 250px;
-    text-align: center;
-    margin-left: 20px;
+.sidebar-section.footer {
+    font-size: 20px;
 }
 
-.sidebar-section {
-    margin: 20px 0;
-}
-
-.cover {
+.cover img{
     width: 100%;
-    margin: -100px;
-    display: inline-block;
-    margin-bottom: 5px;
+    margin-top : -100px;
+}
+
+h1, h2, .price{
+    font-weight: bold;
+    line-height: 1;
+    color: #bbc8d2;
 }
 
 h1 {
-    color : violet;
-    line-height: 1;
-}
-
-.button {
-    color: white;
-    margin-bottom : 5px;
-    width: 200px;
-    margin: 5px auto;
-    padding: 10px;
-    background-color: #444;
-    text-indent: 0.2em;
-    letter-spacing: 0.3em;
-    font-weight: bold;
-}
-
-.button.share {
     margin-bottom: 20px;
-    background-color: goldenrod;
-}
-
-.contents {
-    padding: 20px;
-    overflow: hidden;
-    background-color: skyblue;
-}
-
-.section {
-    margin: 20px;
 }
 
 h2 {
-    color: violet;
-    border-bottom: 2px solid violet;
-    opacity: 0.7;
+    border-bottom: 2px solid #bbc8d2;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
 }
 
-.profile {
+.price::before {
+    content: '$';
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+
+.price {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.button {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: grey;
+    text-indent: 0.2em;
+    letter-spacing: 0.2em;
+}
+
+.button.cart {
+    background-color: #bbc8d2;
+}
+
+.contents {
+    padding: 30px 30px 0 30px;
+    overflow: hidden;
+}
+
+.contents-section p {
+    line-height: 1.4;
+    
+}
+
+.message {
+    overflow: hidden;
+}
+
+.message:last-child {
+    margin-bottom: 0;
+}
+
+.message-profile {
     float: left;
 }
 
-.person .profile img {
-    vertical-align: middle;
+.message-profile img {
     border-radius: 50%;
 }
 
-.person .profile::before,
-.person .profile::after {
-    content:' ';
+.message-profile::after,
+.message-profile.woman::before {
+    content: ' ';
+    border-color: transparent #ddd transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    display: inline-block;
     width: 0;
     height: 0;
-    display: inline-block;
-    border-width: 10px;
-    border-style: solid;
+    vertical-align: 10px;
 }
 
-.person .profile::before{
-    border-color: transparent transparent transparent tomato;
-    display: none;
-}
-
-.person .profile::after{
-    border-color: transparent tomato transparent transparent;
-}
-
-.person.answer .profile::before{
-    content:' ';
-    width: 0;
-    height: 0;
-    display: inline-block;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent transparent tomato;
-}
-
-.person.answer .profile::after{
-    display: none;
-}
-
-.speak {
-    padding: 20px;
+.message-contents{
+    width: 335px;
+    background-color: #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
     overflow: hidden;
-    background-color: tomato;
 }
 
-.person {
-    margin-bottom: 15px;
+.message-contents.woman {
+    margin: 0 0 0 auto;
 }
 
-.person.answer .profile {
+.message-profile.woman {
     float: right;
+}
+
+.message-profile.woman::before {
+    border-color: transparent transparent transparent #ddd;
+}
+
+.message-profile.woman::after {
+    display: none;
 }
