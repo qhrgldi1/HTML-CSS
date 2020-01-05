@@ -1,0 +1,162 @@
+body, h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111;
+    color: gray;
+    font-size: 14px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.logo {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-image: url(images/logo.png);
+    height: 80px;
+    width: 100px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+.menu {
+    float: left;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a {
+    padding: 30px;
+    display: block;
+    position: relative;
+}
+
+.menu li a:hover {
+    color: yellow;
+}
+
+.menu li a::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: currentColor;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 160px;
+    transition: .5s;
+}
+
+.menu li a:hover::before {
+    margin: 0;
+}
+
+.cover-contents {
+    height: 300px;
+    background-image: url(images/cover.png);
+    position: relative;
+}
+
+strong {
+    color: orangered;
+    display: block;
+}
+
+.info-contents {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 300px;
+    padding: 20px;
+    color: #999;
+    transform: translateY(-50%);
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -60px;
+}
+
+.price {
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.price::before {
+    content: '$';
+    margin-right: 0.3em;
+}
+
+.price::after {
+    content: '/mo';
+    color: #999;
+    font-size: 0.5em;
+}
+
+.paragraph {
+    margin-bottom: 10px;
+
+}
+
+.button {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.section {
+    float: left;
+    width: 33.33333333%;
+}
+
+.section-cover {
+    margin-top: 20px;
+    float: left;
+}
+
+.section-contents {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.footer {
+    margin-top: 20px;
+    border-top: 0.5px solid #444;
+}
+
+.footer-logo {
+    display: inline-block;
+    padding: 20px;
+}

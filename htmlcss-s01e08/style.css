@@ -1,0 +1,196 @@
+/* Reset CSS */
+body, ul, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Layouts */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Commons */
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.button {
+    background-color: purple;
+    padding: 0.7em 1.2em 0.8em;
+    display: inline-block;
+    color: violet;
+}
+
+/* Components CSS */
+body {
+    background-color: #111;
+    color: #999;
+    font-size: 14px;
+}
+
+.logo {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 80px;
+    float: left;
+    background-image: url(images/logo.png);
+}
+
+.menu {
+    float: left;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.menu li a:before {
+    content: ' ';
+    background-color: currentColor;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 5px;
+    margin: 0 100px;
+    transition: margin 1s;
+}
+
+.menu li a:hover {
+    color: #fff;
+}
+
+.menu li a:hover:before {
+    margin: 0;
+}
+
+
+.cover {
+    background-image: url(images/cover.png);
+    height: 300px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.cover-car {
+    position: absolute;
+    right: 0;
+    top: -60px;
+}
+
+.cover-contents {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.cover-contents h1 {
+    line-height: 1.1;
+    font-family: 'Alatsi', sans-serif;
+}
+
+.cover-contents h1 strong {
+    display: block;
+    color: orangered;
+}
+
+.cover-contents p {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+}
+
+.price:before {
+    content: '$';
+}
+
+.price:after {
+    content: '/mo';
+    font-size: 0.5em;
+    color: #999;
+}
+
+.description {
+    width: 300px;
+}
+
+.service {
+    padding: 30px 0;
+}
+
+.service-item {
+    float: left;
+    width: 33.3333333%;
+}
+
+.service-item-cover {
+    float: left;
+}
+
+.service-item-contents {
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+.service-item-contents h2{
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.footer {
+    border-top: 1px solid #666;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    padding-right: 0.3em;
+    margin-right: 0.3em;
+    position: relative;
+}
+
+.footer-logo:after {
+    content: ' ';
+    position: absolute;
+    background-color: white;
+    width: 3px;
+    right: -0.3em;
+    top: 0;
+    bottom: 0;
+    opacity: 0.3;
+    border-radius: 30px;
+    margin-bottom: 0.08em;
+}
