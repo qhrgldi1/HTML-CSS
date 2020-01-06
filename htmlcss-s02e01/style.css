@@ -1,8 +1,107 @@
+body, ul, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
 
+li {
+    list-style-type: none;
+}
 
+body {
+    background-color: #0e0e0e;
+    background-image: url(images/bg.png);
+    color: white;
+}
 
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.timeline {
+    padding: 50px 0;
+    margin: 0 -40px;
+    position: relative;
+}
 
+.timeline::before {
+    content: ' ';
+    background-color: dodgerblue;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 5px;
+    bottom: -100px;
+    margin: 100px 0 -100px;
 
+}
 
+.timeline-item {
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+}
 
+.timeline-item::before {
+    content: ' ';
+    background-image: url(images/bg.png);
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 6px solid dodgerblue;
+    margin: 50px -20px;
+}
+
+.timeline-item::after {
+    content: ' ';
+    background-color: dodgerblue;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 30px;
+    height: 5px;
+    margin: 0 35px;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-top: -220px;
+    margin-bottom: -220px;
+}
+
+.timeline-item:nth-child(even)::before,
+.timeline-item:nth-child(even)::after {
+    left: 0;
+}
+
+.tour {
+    background-color: #000;
+    min-height: 400px;
+}
+
+.tour-cover {
+    width: 100%;
+}
+
+.tour-contents {
+    padding: 30px;
+}
+
+.tour-contents h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.tour-contents h2 strong {
+    display: block;
+    color: #999;
+}
+
+.tour-contents p {
+    line-height: 1.4;
+    color: #999;
+}

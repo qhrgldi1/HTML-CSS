@@ -1,0 +1,107 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-image: url(images/bg.png);
+    color: white;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.timeline {
+    padding: 50px 0;
+    position: relative;
+}
+
+.timeline::before {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    margin: 50px 0 -100px;
+    background-color: violet;
+    transform: translateX(-50%);
+}
+
+
+.timeline-item {
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(images/bg.png);
+    border: 5px solid violet;
+    right: 0;
+    border-radius: 50%;
+    margin: 50px -20px;
+}
+
+.timeline-item::after {
+    content: ' ';
+    position: absolute;
+    background-color: violet;
+    width: 30px;
+    height: 5px;
+    right: 0;
+    top: 0;
+    margin: 65px 30px;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-top: -150px;
+    margin-bottom: -150px;
+}
+
+.timeline-item:nth-child(even)::before,
+.timeline-item:nth-child(even)::after {
+    left: 0;
+}
+
+.tour {
+    background-color: #000;
+    min-height: 300px;
+}
+
+.tour-cover {
+    width: 100%;
+}
+
+.tour-contents {
+    padding: 20px;
+}
+
+h1 {
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+strong {
+    color: white;
+    display: block;
+}
+
+P {
+    line-height: 1.5;
+    color: gray;
+}
