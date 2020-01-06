@@ -1,0 +1,18 @@
+#  2-1강 정리
+
+#### width: auto;
+* 부모 크기 상한선 내에서 padding, margin 적용 가능
+
+#### box-sizing:  border-box;
+* width: 50%; 를 주더라도 부모 width 50% 크기를 벗어나지 않도록 조정
+* CSS3 최신 속성
+
+#### Negative margin
+* 바깥으로 튀어나간 공간
+* 시각적으로는 공간을 차지하는것 같지만 실제로는 차지하지 않는다.
+
+#### z-index: 10px;
+* 겹치는 객체가 있을 때 맨 위로 나오도록 설정
+
+#### min-height: 200px;
+* 객체의 최소 높이 지정
