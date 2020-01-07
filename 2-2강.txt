@@ -1,0 +1,30 @@
+# 2-2강 정리
+
+#### max-width: 1200px;
+* maximum width 값
+
+#### media quary
+* @media ( max-width: 720px ) { }
+* 조건문 삽입
+
+* * { Universal Tag (모든 태그에 적용) 
+
+* float: none; transform: none; --> float와 transform 효과 제거
+
+#### <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* 모바일 화면에서 최적화 하는 head 안의 meta 태그
+
+#### padding-top: 100%
+* 창 크기에 따라 div의 높이를 다르게 하고 싶을 때
+* 클래스의 width를 기준으로 높이가 생성됨
+* 정사각형 디자인
+* padding-top: 56.25% --> 가로 세로 비율 16:9
+
+#### 부모와 자식 div의 상/하단 margin 겹침 현상
+* 부모 div class 에 시각적인 공간 생성 하여 문제 해결
+* 또는 부모 div class 에 overflow: hidden 적용
+* block과 block의 겹침 현상이 일어난 것이므로 block 요소가 아닌 table 추가
+* clearfix::after {
+	content: ' ';
+	display: table;
+}
