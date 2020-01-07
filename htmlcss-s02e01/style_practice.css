@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
     margin: 50px auto;
 }
 
@@ -107,4 +107,22 @@ body {
 .tour-contents strong,
 .tour-contents p {
     color: darkgray;
+}
+
+@media ( max-width:720px) {
+    .timeline-item:nth-child(even),
+    .timeline-item {
+        width: auto;
+        margin: 0 0 40px 40px;
+    }
+
+    .timeline::before {
+        left: 40px;
+        transform: none;
+    }
+
+    .timeline-item::after,
+    .timeline-item::before {
+        left : 0;
+    }
 }
