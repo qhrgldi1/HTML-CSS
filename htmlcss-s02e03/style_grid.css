@@ -1,0 +1,54 @@
+/* CSS Reset */
+body, ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+/* Layout */
+.l_wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+.l_row {
+	overflow: hidden;
+	margin: 0 -10px;
+}
+
+.l_col {
+	float: left;
+	width: 20%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+
+/* Components */
+body {
+	background-image: url(images/bg.png);
+	color: #999;
+}
+
+.contents {
+	margin: 40px 0;
+}
+
+.item-cover {
+	width: 100%;
+}
+
+@media (max-width: 760px) {
+	.l_col {
+		width: 33.333333%;
+	}
+
+	.l_row {
+		margin: 0;
+	}
+}
