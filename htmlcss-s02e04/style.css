@@ -21,6 +21,11 @@ img {
 /* Typograph */
 html {
 	font-family: sans-serif;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -365,6 +370,15 @@ body {
 	font-size : 25px;
 	color: white;
 	margin-bottom: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.item-contents p {
+	line-height: 1.6;	
+	height: 8em;
+	overflow: hidden;
 }
 
 .item-footer {
@@ -426,6 +440,10 @@ body {
 } 
 
 @media ( max-width: 480px  ) {
+	html {
+		font-size: 80%;
+	}
+
 	.l_col_mobile_12_12 { width: 100%; }
 	.l_col_mobile_11_12 { width: 91.66666667%; }
 	.l_col_mobile_10_12 { width: 83.33333333%; }
@@ -458,5 +476,11 @@ body {
 	}
 	.curriculum-link span {
 		display: none;
+	}
+
+	.item-contents p {
+		line-height: 1.6;	
+		height: auto;
+		overflow: hidden;
 	}
 } 
