@@ -36,6 +36,10 @@ a {
     margin-bottom: 20px;
 }
 
+.l_col_right {
+    float: right;
+}
+
 .l_col_12_12 { width: 100%; }
 .l_col_11_12 { width: 91.66666667%; }
 .l_col_10_12 { width: 83.33333333%; }
@@ -50,6 +54,116 @@ a {
 .l_col_1_12  { width: 8.33333333%; }
 
 /* Components */
+body {
+    background-color: #222;
+    color: #999;
+}
 
+
+.cover {
+    background-image: url(images/cover.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cover-title {
+    background-color: #000;
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    font-weight: normal;
+    padding: 0.1em 0.5em 0;
+    color: orangered;
+}
+
+.contents {
+    padding: 40px;
+}
+
+.contents-section {
+    margin-bottom: 20px;
+}
+
+.contents-section:last-child {
+    margin-bottom: 0;
+}
+
+.contents-section h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.contents-section h2 span {
+    white-space: nowrap;
+}   
+
+.contents-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contents-section-cover {
+    float: right;
+    margin-left: 30px;
+    margin-right: -40px;
+    display: none;
+}
+
+.item {
+    background-color: #222;
+    padding-top: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.item-cover {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .5s;
+    opacity: 0.3;
+}
+
+.item:hover .item-cover {
+    transform: scale(1.1);
+    opacity: 1;
+}
 
 /* Mediaqueries */
+@media ( min-width: 768px ) {
+    .cover {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 60vw;
+        height: 100vw;
+    }
+
+    .contents {
+        margin-left: 60vw;
+    }
+}
+
+@media ( min-width: 1400px ) {
+    .cover {
+        padding: 0;
+    }
+    
+    .contents-section-cover {
+        display: block;
+    }
+
+    .cover-title {
+        position: absolute;
+        left: 0;
+        top: 25%;
+        transform: translateY(-25%);
+        font-size: 6vw;
+    }
+    .l_col_ld_8_12  {
+        width: 66.66666667%; 
+    }
+}
