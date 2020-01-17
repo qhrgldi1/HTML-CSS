@@ -1,0 +1,253 @@
+/* Reset */
+body, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Typography */
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* Commons */
+.cf::before,
+.cf::after {
+    content: ' ';
+    display: table;
+}
+.cf::after {
+    clear: both;
+}
+
+/* Layouts */
+.l_wrapper {
+    max-width: 980px;
+    width: auto;
+    margin: 30px auto;
+}
+
+.l_main {
+    float: left;
+    width: calc(100% - 320px);
+}
+
+.l_summary {
+    float: right;
+    width: 300px;
+}
+
+.l_row {
+    margin: 0 -5px;
+}
+
+.l_col {
+    float: left;
+    padding: 0 2px;
+    margin: 2px 0;
+    box-sizing: border-box;
+}
+
+.l_col_12_12 { width: 100%; }
+.l_col_11_12 { width: 91.66666667%; }
+.l_col_10_12 { width: 83.33333333%; }
+.l_col_9_12  { width: 75%; }
+.l_col_8_12  { width: 66.66666667%; }
+.l_col_7_12  { width: 58.33333333%; }
+.l_col_6_12  { width: 50%; }
+.l_col_5_12  { width: 41.66666667%; }
+.l_col_4_12  { width: 33.33333333%; }
+.l_col_3_12  { width: 25%; }
+.l_col_2_12  { width: 16.66666667%; }
+.l_col_1_12  { width: 8.33333333%; }
+
+
+/* Components */
+body {
+    background-color: #FAEBD7;
+}
+
+.cover-title {
+    position: relative;
+}
+
+.cover-title-name {
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;    
+    color: #666;
+}
+
+.cover-title-name h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #000;
+}
+
+.section {
+    padding: 20px;
+    background-color: white;
+}
+
+.section-point {
+    float: left;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+.section-cover {
+    width: 100px;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+.summary {
+    background-color: antiquewhite;
+}
+
+.summary h2 {
+    background-color: antiquewhite;
+    padding: 10px 0;
+    font-size: 2.5rem;
+}
+
+.summary-list {
+    background-color: white;
+}
+
+.summary-list img {
+    float: left;
+    width: 60px;
+}
+
+.summary-item {
+    margin: 10px 0 0 70px;
+}
+
+.summary-item h3 {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* MediaQueries */
+@media (max-width: 768px) {
+    .l_wrapper {
+        margin: 30px;
+    }
+    
+    .l_main,
+    .l_summary {
+        float: none;
+        width: auto;
+    }
+
+    .section-point {
+        float: none;
+        margin: 0 -17.5px;
+    }
+
+    .section p:last-child {
+        margin-top: 10px;
+    }
+    
+    .section-cover {
+        width: 100%;
+    }
+
+    .summary-item h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .summary h2 {
+        background-color: antiquewhite;
+        padding: 10px 0;
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+
+    .l_col_tablet_12_12 { width: 100%; }
+    .l_col_tablet_11_12 { width: 91.66666667%; }
+    .l_col_tablet_10_12 { width: 83.33333333%; }
+    .l_col_tablet_9_12  { width: 75%; }
+    .l_col_tablet_8_12  { width: 66.66666667%; }
+    .l_col_tablet_7_12  { width: 58.33333333%; }
+    .l_col_tablet_6_12  { width: 50%; }
+    .l_col_tablet_5_12  { width: 41.66666667%; }
+    .l_col_tablet_4_12  { width: 33.33333333%; }
+    .l_col_tablet_3_12  { width: 25%; }
+    .l_col_tablet_2_12  { width: 16.66666667%; }
+    .l_col_tablet_1_12  { width: 8.33333333%; }
+
+}
+
+@media (max-width: 480px) {
+    .l_wrapper {
+        margin: 30px 10px;
+    }
+
+    .cover-title {
+        position: relative;
+    }
+
+    .l_col_mobile_12_12 { width: 100%; }
+    .l_col_mobile_11_12 { width: 91.66666667%; }
+    .l_col_mobile_10_12 { width: 83.33333333%; }
+    .l_col_mobile_9_12  { width: 75%; }
+    .l_col_mobile_8_12  { width: 66.66666667%; }
+    .l_col_mobile_7_12  { width: 58.33333333%; }
+    .l_col_mobile_6_12  { width: 50%; }
+    .l_col_mobile_5_12  { width: 41.66666667%; }
+    .l_col_mobile_4_12  { width: 33.33333333%; }
+    .l_col_mobile_3_12  { width: 25%; }
+    .l_col_mobile_2_12  { width: 16.66666667%; }
+    .l_col_mobile_1_12  { width: 8.33333333%; }
+
+    .cover-title-name {
+        padding-bottom: 0;
+        position: static;
+    }
+}

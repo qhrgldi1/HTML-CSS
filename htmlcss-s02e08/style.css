@@ -120,6 +120,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 0;
 }
 
+.l_sidebar_wide {
+	width: 300px;
+}
+
 .l_main {
     overflow: hidden;
 }
@@ -138,7 +142,87 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Components */
 body {
+	color: #666;
+}
 
+.section {
+	background-color: antiquewhite;
+	padding: 50px 0;
+}
+
+.list-title {
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+
+.item {
+	background-color: white;
+	overflow: hidden;
+}
+
+.item-cover {
+	float: left;
+	width: 60px;
+}
+
+.item-contents {
+	overflow: hidden;
+	padding: 10px;
+}
+
+.item-contents h3 {
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.detail {
+	background-color: white;
+}
+
+.detail-header {
+	position: relative;
+}
+
+.detail-title {
+	background-color: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 4rem;
+	padding: 0.5em 0.5em 0 0.5em;
+}
+
+.detail-title h1 {
+	line-height: 1.1;
+	color: #111;
+}
+
+.detail-title p {
+	font-size: 1.2rem;
+	color : #666;
+}
+
+.detail-contents {
+	padding: 20px;
+	font-size: 1.2rem;
+}
+
+.detail-contents p {
+	margin-bottom: 1em;
+}
+
+.detail-contents p:last-child {
+	margin-bottom: 0;
+}
+
+.detail-contents-point {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+	margin-left: -20px;
+	margin-bottom: 10px;
 }
 
 
@@ -169,6 +253,11 @@ body {
 	.l_description {
 		margin-bottom: 20px;
 	}
+
+	.detail-contents-point {
+		width: auto;
+		margin: 0 -20px 20px -20px;
+	}
 }
 
 /* Mobile */
@@ -190,6 +279,10 @@ body {
 	}
 	html {
 		font-size: 75%; /* 16px기준, 12px */
+	}
+
+	.detail-title {
+		position: static;
 	}
 }
 
