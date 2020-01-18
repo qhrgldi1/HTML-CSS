@@ -1,0 +1,16 @@
+# 2-8강 정리
+
+#### float grid의 한계
+* grid 안의 컨텐츠 높이가 다르면 무조건 깨지게 되어 있음
+~~~
+.item-contents h3 {
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+~~~
+* h3가 창이 작아졌을 때 두 줄로 출력되지 않도록 처리
+* white-space: nowrap -> 띄어쓰기 무시
+* overflow: hidden -> 넘치는 부분 보이지 않게
+* text-overflow: ellipsis -> 텍스트 넘치는 부분은 생략(...)처리
